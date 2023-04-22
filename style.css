@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,li{
+  text-decoration: none;
+  list-style: none;
+}
+.navbar {
+  width: 100vw;
+  height: 56px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(9, 9, 109);
+}
+
+.navbtns {
+  width: 50%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li,
+.navbar ul li a {
+  font-size: 16px;
+  color: brown;
+}
+
+.main-container {
+  padding: 16px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(50, 50, 97, 0.705);
+  display: flex;
+}
+
+.main-intro {
+  margin-top: 56px;
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-intro h2 {
+  padding: 12px 2px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.intro-para {
+  margin: 42px;
+  width: 78%;
+  font-size: 22px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.more{
+  font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #e4e2f7;
+    animation-delay: 0.8s;
+    border: 2px solid #f6b024;
+}
+
+
+.main-image{
+  padding: 16px 0px 0px 0px;
+  margin-top: 56px;
+
+}
+.main-image img {
+  width: 620px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.boxes {
+  padding-top: 10px;
+  z-index: 100;
+  display: flex;
+}
+.boxes .container{
+  display: flex;
+  justify-content: space-around;
+}
+.boxes .item-box {
+  width: 20%;
+  padding: 16px 10px;
+  position: relative;
+  overflow: hidden;
+  background: #daa0a0;
+  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.item{
+  width:90%;
+  margin: auto;
+}
+.cart{
+  opacity: 0;
+  border: 2px transparent;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 18px;
+  float: right;
+  margin-top: -12px;
+}
+.item :hover button{
+  opacity: 1;
+}
