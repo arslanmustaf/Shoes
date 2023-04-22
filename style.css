@@ -43,7 +43,7 @@ a,li{
 .main-container {
   padding: 16px;
   width: 100vw;
-  background-color: rgba(20, 57, 219, 0.877);
+  background: linear-gradient(51deg,#6b6bd9,#c9b0b0, transparent,#8f5d8f);
   display: flex;
 }
 
@@ -59,7 +59,7 @@ a,li{
   padding: 12px 2px;
   font-size: 48px;
   font-weight: 600;
-  color:#c7d2df ;
+  color:#07264d ;
 }
 
 .intro-para {
@@ -80,7 +80,7 @@ a,li{
     border-radius: 50px;
     transition: 0.5s;
     line-height: 1;
-    color: #e4e2f7;
+    color: #1f185c;
     animation-delay: 0.8s;
     border: 2px solid #f6b024;
 }
