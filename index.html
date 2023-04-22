@@ -40,21 +40,21 @@
 
     <section id="boxes" class="boxes">
       <div class="container">
-        <div class="item-box">
+        <div onclick=cart() class="item-box">
           <img src="item1.png" class="item">
-          <button class="cart">$</button>
+          <button  class="cart">$</button>
         </div>
           <div class="item-box">
-            <img src="item2.png" class="item">
+            <img onclick=cart() src="item2.png" class="item">
             <button class="cart">$</button>
           </div>
         
             <div class="item-box">
-              <img src="item3.png" class="item">
+              <img onclick=cart() src="item3.png" class="item">
             <button class="cart">$</button>
             </div>
             
-              <div class="item-box">
+              <div onclick=cart() class="item-box">
                 <img src="item4.png" class="item">
             <button class="cart">$</button>
 
@@ -69,11 +69,11 @@
     <div class="foot">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="log">
             <h4>Our Services</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           </div>
-          <div class="col-lg-6">
+          <div class="log">
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -86,7 +86,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="links"></i> <a href="#">Home</a></li>
@@ -126,7 +126,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="ftcontainer">
       <div class="copyright">
         &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
       </div>
@@ -135,8 +135,11 @@
   </footer>
   </body>
   <script>
-    document.getElementById("item").addEventListener("",()=>{
+    cart = function(){
+    let item=document.querySelectorAll(".item-box")
+      let cart=document.querySelector('.cart')
+      cart.style.opacity="1"
 
-    })
+    }
   </script>
 </html>
