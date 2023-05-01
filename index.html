@@ -39,25 +39,69 @@
     </div>
 
     <section id="boxes" class="boxes">
+      <h2 id="products">Our Products</h2>
       <div class="container">
-        <div onclick=cart() class="item-box">
+        <div class="item-box">
           <img src="item1.png" class="item">
-          <button  class="cart">$</button>
+          <div class="detail">
+            <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+            <button class="addcart">Add to Cart</button>
+          </div>
         </div>
           <div class="item-box">
             <img onclick=cart() src="item2.png" class="item">
-            <button class="cart">$</button>
+            <div class="detail">
+              <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+              <button class="addcart">Add to Cart</button>
+            </div>
           </div>
         
             <div class="item-box">
               <img onclick=cart() src="item3.png" class="item">
-            <button class="cart">$</button>
+              <div class="detail">
+                <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+                <button class="addcart">Add to Cart</button>
+              </div>
             </div>
             
               <div onclick=cart() class="item-box">
                 <img src="item4.png" class="item">
-            <button class="cart">$</button>
-
+                <div class="detail">
+                  <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+                  <button class="addcart">Add to Cart</button>
+                </div>
+              </div>
+      </div>
+      <div class="container">
+        <div class="item-box">
+          <img src="item1.png" class="item">
+          <div class="detail">
+            <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+            <button class="addcart">Add to Cart</button>
+          </div>
+        </div>
+          <div class="item-box">
+            <img onclick=cart() src="item2.png" class="item">
+            <div class="detail">
+              <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+              <button class="addcart">Add to Cart</button>
+            </div>
+          </div>
+        
+            <div class="item-box">
+              <img onclick=cart() src="item3.png" class="item">
+              <div class="detail">
+                <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+                <button class="addcart">Add to Cart</button>
+              </div>
+            </div>
+            
+              <div onclick=cart() class="item-box">
+                <img src="item4.png" class="item">
+                <div class="detail">
+                  <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
+                  <button class="addcart">Add to Cart</button>
+                </div>
               </div>
       </div>
     </section>
@@ -135,11 +179,5 @@
   </footer>
   </body>
   <script>
-    cart = function(){
-    let item=document.querySelectorAll(".item-box")
-      let cart=document.querySelector('.cart')
-      cart.style.opacity="1"
-
-    }
   </script>
 </html>
