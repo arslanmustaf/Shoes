@@ -4,6 +4,98 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
+
+.slider  {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 16px auto;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slides input{ 
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+
+.manual{
+   position: absolute;
+   width: 800px;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center ;
+}
+.manubtn{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manubtn:not(:last-child){
+  margin-right: 40px;
+
+}
+.manubtn:hover{
+  background-color: #080a50;
+}
+#rd1:checked ~ .f{
+  margin-left: 0%;
+}
+#rd2:checked ~ .f{
+  margin-left: -20%;
+}
+#rd3:checked ~ .f{
+  margin-left: -40%;
+}
+#rd4:checked ~ .f{
+  margin-left: -60%;
+}
+
+.nauto div{
+  border: 2px solid #0312dc;
+  position: absolute;
+  display: flex;
+  width: 800px;
+  margin-top: 460px;
+  justify-content: center;
+}
+.nauto div:not(:last-child){
+  margin-right: 40px;
+}
+#rd1:checked ~ .autobtn1{
+  background-color: #0312dc;
+}
+#rd2:checked ~ .autobtn2{
+  background-color: #0312dc;
+}
+#rd3:checked ~ .autobtn3{
+  background-color: #0312dc;
+}
+#rd4:checked ~ .autobtn4{
+  background-color: #0312dc;
+}
+
+
+
 a,li{
   text-decoration: none;
   list-style: none;

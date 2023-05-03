@@ -37,6 +37,45 @@
       </div>
       <div class="main-image" id="main-image"><img src="shoe.png" /></div>
     </div>
+    
+    <div class="slider">
+      <div class="slides">
+        
+        <input type="radio" name="slide" class="rdobtn" id="rd1">
+        <input type="radio" name="slide" class="rdobtn" id="rd2">
+        <input type="radio" name="slide" class="rdobtn" id="rd3">
+        <input type="radio" name="slide" class="rdobtn" id="rd4">
+        <div class="slide f">
+          <img src="slide1.jpg" >
+        </div>
+        <div class="slide">
+          <img src="slide2.jpg" >
+        </div>
+        <div class="slide">
+          <img src="slide3.jpg" >
+        </div>
+        <div class="slide">
+          <img src="slide4.jpg" >
+        </div>
+
+        <div class="nauto">
+          <div class="autobtn1"></div>
+          <div class="autobtn2"></div>
+          <div class="autobtn3"></div>
+          <div class="autobtn4"></div>
+        </div>
+      </div>
+      <div class="manual">
+        <label for="rd1" class="manubtn"></label>
+        <label for="rd2" class="manubtn"></label>
+        <label for="rd3" class="manubtn"></label>
+        <label for="rd4" class="manubtn"></label>
+      </div>
+    </div>
+
+
+
+
 
     <section id="boxes" class="boxes">
       <h2 id="products">Our Products</h2>
@@ -81,7 +120,7 @@
           </div>
         </div>
           <div class="item-box">
-            <img onclick=cart() src="item2.png" class="item">
+            <img src="item2.png" class="item">
             <div class="detail">
               <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
               <button class="addcart">Add to Cart</button>
@@ -89,14 +128,14 @@
           </div>
         
             <div class="item-box">
-              <img onclick=cart() src="item3.png" class="item">
+              <img src="item3.png" class="item">
               <div class="detail">
                 <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
                 <button class="addcart">Add to Cart</button>
               </div>
             </div>
             
-              <div onclick=cart() class="item-box">
+              <div class="item-box">
                 <img src="item4.png" class="item">
                 <div class="detail">
                   <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
@@ -179,5 +218,13 @@
   </footer>
   </body>
   <script>
+    var counter = 1
+    setInterval(function(){
+      document.getElementById('rdo' + counter).checked = true;
+      counter++
+      if(counter > 4){
+        counter = 1
+      }
+    },1)
   </script>
 </html>
