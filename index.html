@@ -8,10 +8,10 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar">
+    <header id="navbar" class="navbar">
       <h1 class="logo"><a class="logo" href="index.html">Logo</a></h1>
       <div class="navbtns">
-        <ul>
+        <ul class="list">
           <li><a href="#home">Home</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#services">Services</a></li>
@@ -19,7 +19,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
     <div class="main-container">
       <div class="main-intro" id="main-intro">
         <h2 class="heading">Welcome to Our Company</h2>
@@ -28,14 +33,12 @@
           maxime iure magnam eum eligendi dolor repudiandae labore esse quis.
           Tenetur ad et quis ullam veritatis blanditiis, ipsa est sit ab
           suscipit. Nesciunt, corporis quis ex tempora itaque libero assumenda
-          ducimus accusamus nisi? Ut velit est quam dolor ad a aliquid qui
           aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati
           alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
           accusamus repellendus deleniti vel. Minus et tempore modi architecto.
         </p>
         <a href="#products" class="more">Read More</a>
       </div>
-      <div class="main-image" id="main-image"><img src="shoe.png" /></div>
     </div>
     
     <div class="slider">
@@ -46,24 +49,24 @@
         <input type="radio" name="slide" class="rdobtn" id="rd3">
         <input type="radio" name="slide" class="rdobtn" id="rd4">
         <div class="slide f">
-          <img src="slide1.jpg" >
+          <img class="img1" >
         </div>
         <div class="slide">
-          <img src="slide2.jpg" >
+          <img class="img2"  >
         </div>
         <div class="slide">
-          <img src="slide3.jpg" >
+          <img class="img3"  >
         </div>
         <div class="slide">
-          <img src="slide4.jpg" >
+          <img class="img4" >
         </div>
-
+<!-- 
         <div class="nauto">
           <div class="autobtn1"></div>
           <div class="autobtn2"></div>
           <div class="autobtn3"></div>
           <div class="autobtn4"></div>
-        </div>
+        </div> -->
       </div>
       <div class="manual">
         <label for="rd1" class="manubtn"></label>
@@ -78,7 +81,7 @@
 
 
     <section id="boxes" class="boxes">
-      <h2 id="products">Our Products</h2>
+      <h2 id="products">Featured Products</h2>
       <div class="container">
         <div class="item-box">
           <img src="item1.png" class="item">
@@ -144,10 +147,9 @@
               </div>
       </div>
     </section>
-
-
+<h1>working on this Web</h1>
      <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
 
     <div class="foot">
       <div class="container">
@@ -196,7 +198,8 @@
           <div class="footer-info">
             <h3>About Company</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <!-- bookMark: add icons + bottom  -->
+            bookMark: add icons + bottom
+
             <div class="social-media">
               <a href="#" class="twitter"></a>
               <a href="#" class="facebook"></a>
@@ -215,16 +218,25 @@
       </div>
   
     </div>
-  </footer>
+  </footer> -->
   </body>
   <script>
-    var counter = 1
-    setInterval(function(){
-      document.getElementById('rdo' + counter).checked = true;
-      counter++
-      if(counter > 4){
-        counter = 1
-      }
-    },1)
+    let hamburger = document.querySelector('.hamburger');
+    let navbar = document.querySelector('.navbar');
+    let list = document.querySelector('.navbar ul')
+    hamburger.addEventListener('click', ()=>{
+      navbar.classList.toggle('active');
+      list.classList.toggle('active');
+    })
+  let counter = 1
+  setInterval(function(){
+  let a =document.getElementById('rd' + counter)
+  a.checked = true;
+    counter++;
+    console.log('counter')
+    if(counter > 4){
+     counter = 1
+     }
+   },5000)
   </script>
 </html>
