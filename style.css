@@ -21,6 +21,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: 1s ease-out;
 }
 .navbar.active{
   height: 420px;
