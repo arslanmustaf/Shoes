@@ -4,14 +4,104 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+.body{
+  position: absolute;
+}
 a,
 li {
   text-decoration: none;
   list-style: none;
   cursor: pointer;
 }
+ /* flycard start  */
+ .fun{
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: none;
+ }
 
+ .flycard{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000088;
+ }
+ .card {
+  width: 60%;
+  height: 600px;
+  padding: 10px;
+  margin: auto;
+  background:linear-gradient(148deg,#ffffff,#ffedda);
+  border: 1px solid burlywood;
+  border-radius: 12px;
+  box-shadow: 7px 6px 31px black;
+}
+
+.backbtn{
+  width: 40px;
+  height: 40px;
+  background-color: #9598e5;
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 4px;
+  font-size: 24px;
+}
+.flycard .card img {
+  background-color: #fff;
+  width: 45%;
+  border-bottom: 1px solid brown;
+  margin: auto;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.price {
+  margin: auto;
+  padding: 10px 4px;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(54, 35, 22);
+  letter-spacing: 1px;
+}
+
+.deliver {
+  width: 98%;
+  margin: 8px auto;
+}
+
+.time {
+  width: 100%;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.fee {
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 8px 4px;
+}
+
+.buybtn {
+  font-size: 19px;
+  text-align: center;
+  padding: 6px;
+  float: right;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  margin: auto 12px;
+  background: #af0000;
+  color: #fff;
+}
+
+  /* flycard end  */
 /* navbar  */
 .navbar {
   width: 100vw;
@@ -312,6 +402,9 @@ li {
   .manual{
     margin-top: -58px;
   }
+  .flycard .content img{
+    width: 66%;
+  }
 }
 @media (max-width: 846px){
   .main-intro , .main-intro p{
@@ -361,6 +454,12 @@ li {
     .main-intro p{
       width: 80%;
     }
+    .card{
+      height: 550px;
+    }
+    .flycard .content img{
+      width: 69%;
+    }
   }
   @media (max-width: 614px){
     .img1{
@@ -388,6 +487,9 @@ li {
     .boxes{
       font-size: 34px;
     }
+    .card{
+      height: 510px;
+    }
   }
   @media (max-width: 572px){
     .main-intro h2{
@@ -404,6 +506,12 @@ li {
     .boxes .item-box{
       height: 160px;
     }
+    .card{
+      height: 498px;
+    }
+    .flycard .card .content img{
+      width: 85%;
+    }
   }
 
   @media (max-width: 532px){
@@ -418,6 +526,10 @@ li {
     }
     .boxes h2{
       font-size: 30px;
+    }
+    .card{
+      width: 76%;
+      height: 520px;
     }
   }
   @media (max-width: 476px){

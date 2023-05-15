@@ -8,6 +8,8 @@
     <title>Document</title>
   </head>
   <body>
+
+    <div class="body">
     <header id="navbar" class="navbar">
       <h1 class="logo"><a class="logo" href="index.html">Logo</a></h1>
       <div class="navbtns">
@@ -87,14 +89,14 @@
           <img src="item1.png" class="item">
           <div class="detail">
             <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-            <button class="addcart">Add to Cart</button>
+            <button onclick=cart() class="addcart">Add to Cart</button>
           </div>
         </div>
           <div class="item-box">
             <img onclick=cart() src="item2.png" class="item">
             <div class="detail">
               <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-              <button class="addcart">Add to Cart</button>
+              <button onclick=cart() class="addcart">Add to Cart</button>
             </div>
           </div>
         
@@ -102,7 +104,7 @@
               <img onclick=cart() src="item3.png" class="item">
               <div class="detail">
                 <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-                <button class="addcart">Add to Cart</button>
+                <button onclick=cart() class="addcart">Add to Cart</button>
               </div>
             </div>
             
@@ -110,7 +112,7 @@
                 <img src="item4.png" class="item">
                 <div class="detail">
                   <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-                  <button class="addcart">Add to Cart</button>
+                  <button onclick=cart() class="addcart">Add to Cart</button>
                 </div>
               </div>
       </div>
@@ -119,14 +121,14 @@
           <img src="item1.png" class="item">
           <div class="detail">
             <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-            <button class="addcart">Add to Cart</button>
+            <button onclick=cart() class="addcart">Add to Cart</button>
           </div>
         </div>
           <div class="item-box">
             <img src="item2.png" class="item">
             <div class="detail">
               <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-              <button class="addcart">Add to Cart</button>
+              <button onclick=cart() class="addcart">Add to Cart</button>
             </div>
           </div>
         
@@ -134,7 +136,7 @@
               <img src="item3.png" class="item">
               <div class="detail">
                 <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-                <button class="addcart">Add to Cart</button>
+                <button onclick=cart() class="addcart">Add to Cart</button>
               </div>
             </div>
             
@@ -142,7 +144,7 @@
                 <img src="item4.png" class="item">
                 <div class="detail">
                   <p class="name">Adidas Sneakers pair <br><span>latest and Excellent Quality Product</span></p>
-                  <button class="addcart">Add to Cart</button>
+                  <button onclick=cart() class="addcart">Add to Cart</button>
                 </div>
               </div>
       </div>
@@ -219,7 +221,32 @@
   
     </div>
   </footer> -->
+    </div>
   </body>
+  <div class="flycard">
+    <div class="card">
+      <div class="back">
+        <button onclick=back() class="backbtn">↩</button>
+      </div>
+      <div class="fun">
+        <p>Thanks for buying this item</p>
+      </div>
+      <div class="content">
+      <img src="item1.png" alt="">
+      <h2 class="name">Addidas Super Comfortable Shoes</h2>
+      <p class="price">Rs. 5000 PKR <strike>Rs.10000</strike></p>
+      <div class="deliver">
+          <p class="time">It takes 3 to 5 days for delivery.<span class="fee">Rs.100</span></p>
+      </div>
+      <div class="review">
+          <h3>Rating on this Item : 4/5 </h3>
+      </div>
+      <div class="buy">
+          <button onclick=buy() class="buybtn">Buy Now</button>
+      </div>
+      </div>
+  </div>
+  </div>
   <script>
     let hamburger = document.querySelector('.hamburger');
     let navbar = document.querySelector('.navbar');
@@ -238,5 +265,18 @@
      counter = 1
      }
    },5000)
+   let cart =()=>{
+   let flycard =document.querySelector('.flycard')
+   flycard.style.display = 'flex'
+   }
+   let back = ()=>{
+    let flycard =document.querySelector('.flycard')
+    flycard.style.display = 'none'
+   }
+   let buy = ()=>{
+    document.querySelector('.content').style.display = 'none'
+    document.querySelector('.fun').style.display = 'block'
+    
+   }
   </script>
 </html>

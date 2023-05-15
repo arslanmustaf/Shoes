@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 400px;
+        height: 600px;
+        padding: 10px;
+        margin: auto;
+        background:linear-gradient(148deg,#ffffff,#ffedda);
+        border: 1px solid burlywood;
+        border-radius: 12px;
+    }
+
+    img {
+        background-color: #fff;
+        width: 100%;
+        border-bottom: 1px solid brown;
+        margin: auto;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .price {
+        margin: auto;
+        padding: 10px 4px;
+        font-size: 20px;
+        border-bottom: 1px solid rgb(54, 35, 22);
+        letter-spacing: 1px;
+    }
+
+    .deliver {
+        width: 98%;
+        margin: 8px auto;
+    }
+
+    .time {
+        width: 100%;
+        font-size: 18px;
+        padding: 4px;
+    }
+
+    .fee {
+        margin-left: 20px;
+        font-weight: bold;
+        padding: 8px 4px;
+    }
+
+    .buybtn {
+        font-size: 19px;
+        text-align: center;
+        padding: 6px;
+        float: right;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        margin: auto 12px;
+        background: #af0000;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <img src="item1.png" alt="">
+        <h2 class="name">Addidas Super Comfortable Shoes</h2>
+        <p class="price">Rs. 5000 PKR <strike>Rs.10000</strike></p>
+        <div class="deliver">
+            <p class="time">It takes 3 to 5 days for delivery.<span class="fee">Rs.100</span></p>
+        </div>
+        <div class="review">
+            <h3>Rating on this Item : 4/5 </h3>
+        </div>
+        <div class="buy">
+            <button class="buybtn">Buy Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
